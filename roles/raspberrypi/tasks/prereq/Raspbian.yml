@@ -26,3 +26,6 @@
     path: /usr/sbin/ip6tables-legacy
     name: ip6tables
   register: ip6_legacy
+
+- name: Install open-iscsi (for longhorn support)
+  apt: name=open-iscsi state=present
